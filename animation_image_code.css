@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
         html{background-color: white;}
 
         body {
@@ -46,6 +40,7 @@
         animation: black 5s;
         border: 10px solid;
         }
+       
         p{
         border-radius:90% 90% 90% 90%;
         margin-left: 0px;
@@ -55,6 +50,7 @@
         animation: black 7s;
         border: 10px solid;
         }
+        
         article{
         border-radius:90% 90% 90% 90%;
         margin-left: 0px;
@@ -66,13 +62,6 @@
         border: 10px solid;
         }
 
-	</style>
-</head>
-<body>
-	<div></div>
-    <li></li>
-    <nav></nav>
-    <p></p>
-    <article></article>
-</body>
-</html>
+        h1{
+            color: white; 
+        }

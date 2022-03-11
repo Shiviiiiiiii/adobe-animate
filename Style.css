@@ -1,17 +1,27 @@
-table
-{
-    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
-    margin: auto;
-}
-td, th
-{
-    border: 1px solid black;
-    text-align:center;
-    width:6%;
-}
 h1
 {
 	text-align:center;
 	color: #41C7E5;
 	font-family: Arial;
+}
+table
+{
+  border-collapse: collapse;
+  margin:auto;
+}
+th
+{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color:#B7C2C5;
+}
+td
+{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+tr:nth-child(odd){
+	background-color:#DBF6FF;
 }

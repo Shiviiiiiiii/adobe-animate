@@ -3,6 +3,7 @@ let feuDepart = {
             start: document.getElementById('strt'),
             stop: document.getElementById('stp'),
             reset: document.getElementById('rst'),
+            audio: document.getElementById('chatAudio'),
             ms: 0,
             sec: 0,
             min: 0,
@@ -32,11 +33,18 @@ let feuDepart = {
 
             timer: () => {
                 feuDepart.t = setTimeout(feuDepart.add, 1000 - 9000);
-            }
+            },
+                  
+            play: () => {
+            audio.play()
+        }
+
         };
 
         setTimeout(feuDepart.timer, 9000);
-        feuDepart.start.onclick = feuDepart.timer;
+        feuDepart.start.onclick =  {
+            feuDepart.timer
+        }
         feuDepart.stop.onclick = function() {
             clearTimeout(feuDepart.t);
         }

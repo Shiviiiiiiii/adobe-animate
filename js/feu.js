@@ -42,15 +42,3 @@ let feuDepart = {
         };
 
         setTimeout(feuDepart.timer, 9000);
-        feuDepart.start.onclick =  {
-            feuDepart.timer
-        }
-        feuDepart.stop.onclick = function() {
-            clearTimeout(feuDepart.t);
-        }
-        feuDepart.reset.onclick = function() {
-            feuDepart.h1.textContent = "00:00:000";
-            feuDepart.seconds = 0;
-            feuDepart.minutes = 0;
-            feuDepart.hours = 0;
-        }

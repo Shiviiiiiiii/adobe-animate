@@ -81,8 +81,8 @@
       </div>
       <br />
       <div>
-        <label for="Téléphone">N° de Licence: </label>
-        <input type="text" id="Téléphone" size="60" name="Téléphone" />
+        <label for="Licence">N° de Licence: </label>
+        <input type="text" id="Licence" size="60" name="Licence" />
       </div>
       <br />
       <div class="buttons">
@@ -95,7 +95,7 @@
         var name = document.forms["RegForm"]["Nom"];
         var email = document.forms["RegForm"]["Email"];
         var phone = document.forms["RegForm"]["Téléphone"];
-        var what = document.forms["RegForm"]["Sujet"];
+        var Licence = document.forms["RegForm"]["Licence"];
         var password = document.forms["RegForm"]["Mot de passe"];
         var address = document.forms["RegForm"]["Adresse"];
         var comment = document.forms["RegForm"]["Commentaire"];
@@ -104,9 +104,6 @@
           alert("Mettez votre nom.");
           name.focus();
           return false;
-        }
-        if (name.value != "Lucas") {
-            alert("Nom incorrect.")
         }
         if (address.value == "") {
           alert("Mettez votre adresse.");
@@ -138,9 +135,9 @@
           password.focus();
           return false;
         }
-        if (what.selectedIndex < 1) {
-          alert("Mettez votre cours.");
-          what.focus();
+        if (Licence.value == ""){
+          alert("Écrivez un numéro de Licence. ");
+          comment.focus();
           return false;
         }
         if (comment.value == "") {

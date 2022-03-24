@@ -3,10 +3,10 @@ let feuDepart = {
             start: document.getElementById('strt'),
             stop: document.getElementById('stp'),
             reset: document.getElementById('rst'),
-            audioOBJ: new audio(url),
+            audioOBJ: new Audio('https://lasonotheque.org/UPLOAD/ogg/0001.ogg'),
             ms: 0,
-            sec: 0,
-            min: 0,
+            sec: 55,
+            min: 4,
             t: null,
             tick: () => {
                 feuDepart.ms += 5;
@@ -16,8 +16,12 @@ let feuDepart = {
                     if (feuDepart.sec >= 60) {
                         feuDepart.sec = 0;
                         feuDepart.min++;
-                        if (feuDepart.min >= 60) {
-                            feuDepart.min = 0;
+                        if (feuDepart.min == 5) { console.log("text2)")
+                            feuDepart.audioOBJ.muted = true;
+                            feuDepart.audioOBJ.play();
+                            if (feuDepart.min >= 60) { console.log("text")
+                                feuDepart.min = 0;
+                            }
                         }
                     }
                 }
@@ -32,9 +36,10 @@ let feuDepart = {
             },
 
             timer: () => {
-                feuDepart.t = setTimeout(feuDepart.add, 1000 - 9000);
+                feuDepart.t = setTimeout(feuDepart.add, 1);
             },
+            
         };
-
+            
         setTimeout(feuDepart.timer, 9000);
 

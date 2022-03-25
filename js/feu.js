@@ -7,7 +7,12 @@ let feuDepart = {
             ms: 0,
             sec: 55,
             min: 4,
-            t: null,
+            t: null,  
+
+            play: () => {
+                feuDepart.audioOBJ.play();
+            },
+
             tick: () => {
                 feuDepart.ms += 5;
                 if (feuDepart.ms >= 999) {
@@ -16,17 +21,17 @@ let feuDepart = {
                     if (feuDepart.sec >= 60) {
                         feuDepart.sec = 0;
                         feuDepart.min++;
-                        if (feuDepart.min == 5) { console.log("text2)")
-                            feuDepart.audioOBJ.muted = true;
-                            feuDepart.audioOBJ.play();
-                            if (feuDepart.min >= 60) { console.log("text")
+                        if (feuDepart.min == 5) {
+                            feuDepart.play();
+                            if (feuDepart.min >= 60) {
                                 feuDepart.min = 0;
                             }
                         }
                     }
                 }
             },
-
+            
+        
             add: () => {
                 feuDepart.tick();
                 feuDepart.h1.textContent = (feuDepart.min > 9 ? feuDepart.min : "0" + feuDepart.min) +
@@ -40,6 +45,13 @@ let feuDepart = {
             },
             
         };
-            
+        
+window.addEventListener('load', () => {
+    document.addEventListener('click', () => {
+        setTimeout(feuDepart.play, 9000);
         setTimeout(feuDepart.timer, 9000);
-
+        for(let e of document.querySelectorAll('.stopped')) {
+            e.classList.remove('stopped');
+        }
+    });
+});

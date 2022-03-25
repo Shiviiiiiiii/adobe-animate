@@ -22,8 +22,11 @@ body {
     height: 200px;
     margin-top: 5px;
     background-color: red;
-    animation: black 2s;
     border: 10px solid;
+}
+
+.FeuRouge:not(.stopped) {
+    animation: black 2s;
 }
 
 @keyframes black {
@@ -39,8 +42,11 @@ body {
     width: 200px;
     height: 200px;
     background-color: rgb(255, 214, 78);
-    animation: black 5s;
     border: 10px solid;
+}
+
+.FeuOrange1:not(.stopped) {
+    animation: black 5s;
 }
 
 .FeuOrange2 {
@@ -49,8 +55,11 @@ body {
     width: 200px;
     height: 200px;
     background-color: rgb(255, 214, 78);
-    animation: black 7s;
     border: 10px solid;
+}
+
+.FeuOrange2:not(.stopped) {
+    animation: black 7s;
 }
 
 .FeuVert {
@@ -59,9 +68,12 @@ body {
     width: 200px;
     height: 200px;
     background-color: green;
-    animation: black 9s;
     margin-bottom: 5px;
     border: 10px solid;
+}
+
+.FeuVert:not(.stopped) {
+    animation: black 9s;
 }
 
 h1 {

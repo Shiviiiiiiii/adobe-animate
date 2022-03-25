@@ -3,7 +3,8 @@ let feuDepart = {
             start: document.getElementById('strt'),
             stop: document.getElementById('stp'),
             reset: document.getElementById('rst'),
-            audioOBJ: new Audio('https://lasonotheque.org/UPLOAD/ogg/0001.ogg'),
+            audioOBJ: new Audio('son debut de course'),
+            audioOBJ2: new Audio('son fin de course'),
             ms: 0,
             sec: 55,
             min: 4,
@@ -11,6 +12,10 @@ let feuDepart = {
 
             play: () => {
                 feuDepart.audioOBJ.play();
+            },
+
+            play2: () => {
+                feuDepart.audioOBJ2.play();
             },
 
             tick: () => {
@@ -22,7 +27,7 @@ let feuDepart = {
                         feuDepart.sec = 0;
                         feuDepart.min++;
                         if (feuDepart.min == 5) {
-                            feuDepart.play();
+                            feuDepart.play2();
                             if (feuDepart.min >= 60) {
                                 feuDepart.min = 0;
                             }

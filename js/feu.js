@@ -3,11 +3,11 @@ let feuDepart = {
             start: document.getElementById('strt'),
             stop: document.getElementById('stp'),
             reset: document.getElementById('rst'),
-            audioOBJ: new Audio('son debut de course'),
-            audioOBJ2: new Audio('son fin de course'),
+            audioOBJ: new Audio('https://lasonotheque.org/UPLOAD/ogg/0564.ogg'),
+            audioOBJ2: new Audio('https://lasonotheque.org/UPLOAD/ogg/0035.ogg'),
             ms: 0,
-            sec: 55,
-            min: 4,
+            sec: 0,
+            min: 0,
             t: null,  
 
             play: () => {

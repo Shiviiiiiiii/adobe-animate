@@ -116,7 +116,7 @@
       </div>
       <br />
       <div class="buttons">
-        <input type="submit" value="Envoyer" name="Envoyer" />
+        <input type="submit" value="Envoyer" name="Envoyer"  />
         <input type="reset" value="Réinitialiser" name="Réinitialiser" />
       </div>
     </form>

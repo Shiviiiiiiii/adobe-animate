@@ -12,12 +12,12 @@
         $Nom = $_POST['Nom'];
         $Prenom  = $_POST['Prenom'];
         $Email = $_POST['Email'];
-        $Mot_de_passe = $_POST['Mot_de_passe'];
+        $Type = $_POST['Type_de_voiture'];
         $Telephone = $_POST['Telephone'];
         $Licence = $_POST['Licence'];
         echo $Nom;
         //requete pour ajouter des éléments dans la table "utilisateurs"
-        $requete = "INSERT INTO Inscription (Nom, Prenom, Adresse_electronique, mot_de_passe, telephone, numero_licence) VALUES('$Nom','$Prenom','$Email','$Mot_de_passe','$Telephone', '$Licence')";
+        $requete = "INSERT INTO Inscription (Nom, Prenom, Adresse_electronique, Type_de_voiture, telephone, numero_licence) VALUES('$Nom','$Prenom','$Email','$Type','$Telephone', '$Licence')";
         mysqli_query($connect,$requete);
         echo "Enregistre";
         header('Location:../index.php');
@@ -59,9 +59,9 @@
                       </ul>
                     </li>
                       
-                    <li class="mainMenu"><a href="Tableau-participants.html">Classement</a>
+                    <li class="mainMenu"><a href="">Classement</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="Tableau-participants.html">Liste participants</a></li>
+                        <li class="subOption"><a href="Tableau-participants.php">Liste participants</a></li>
                         <li class="subOption"><a href="">Résultats courses</a></li>
                       </ul>
                     </li>

@@ -1,3 +1,14 @@
+<?php
+    $host="localhost";
+    $user="root";
+    $mdp="";
+    $bdd="voiturerc";
+    
+    //récupération des paramètres de configuration dans la variable PHP connect
+    $connect = mysqli_connect($host,$user,$mdp,$bdd);
+    //fin du code PHP
+?>
+
 <DOCTYPE html>
     <html lang="fr">
     <head>
@@ -9,7 +20,7 @@
     <body>
         <header class="header clearfix">
             <div class="clearfix display-flex align-items contentHolder" data-items="center">
-                <div class="logo"><a href="../index.html"><img src="../imgs/logo.png" alt="logo Placeholder"></a></div>
+                <div class="logo"><a href="../index.php"><img src="../imgs/logo.png" alt="logo Placeholder"></a></div>
                 <nav class="menu">
                   
                     <ol>
@@ -18,7 +29,7 @@
                             <li class="subOption"><a href="">Membre du bureau</a></li>
                             <li class="subOption"><a href="">Origine du site</a></li>
                             <li class="subOption"><a href="Reglement.html">Réglement</a></li>
-                            <li class="subOption"><a href="">Fiches d'inscription</a></li>
+                            <li class="subOption"><a href="Inscription.php">Fiches d'inscription</a></li>
                           </ul>
                         </li>
                         <li class="mainMenu"><a href="">Licenciés</a>
@@ -58,40 +69,28 @@
                  <th>Nom</th>
                  <th>Prénom</th>
                  <th><a href="Tableau_Caractéristiques.html">Type de voiture</a></th>
-                <th>Numero de la voiture</th>
+                 <th>Numero de la voiture</th>
                  <th>Caution d'inscription</th>
                  <th>Licence validé</th>
                  <th>Place</th>
-                <th>Temps de classement</th>
+                 <th>Temps de classement</th>
                 </tr>
             </thead>
     
 
             <tbody>
-                <tr>
-                    <td>?</td>
-                    <td>?</td>
-                    <td>Electrique</td>
-                    <td>36</td>
+            <?php
+                $req = 'SELECT * FROM inscription';
+                $exec = mysqli_query($connect,$req);
+                $players=mysqli_fetch_all($exec);         
+                foreach($players as $player){?>
+                    <tr>
+                    <td><?= $player[1];?></td>
+                    <td><?= $player[2];?></td>
+                    <td></td>
+                    <td><?= $player[0];?></td>
                 </tr>
-                <tr>
-                    <td>?</td>
-                    <td>?</td>
-                    <td>Electrique</td>
-                    <td>03</td>
-                </tr>
-                <tr>
-                    <td>?</td>
-                    <td>?</td>
-                    <td>Electrique</td>
-                    <td>07</td>
-                </tr>
-                <tr>
-                    <td>?</td>
-                    <td>?</td>
-                    <td>Electrique</td>
-                    <td>14</td>
-                </tr>
+              <?php  } ?>
             </tbody>
 
 </table>

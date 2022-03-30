@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Titre du document</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
+<html lang="fr" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Grand Rush De Baggio</title>
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+    
     <div class="popUp"></div>
     <div class="dimmer"></div>
     
     <header class="header clearfix">
         <div class="clearfix display-flex align-items contentHolder" data-items="center">
-            <div class="logo"><a href="../index.html"><img src="../imgs/logo.png" alt="logo Placeholder"></a></div>
+            <div class="logo"><a href="index.php"><img src="imgs/logo.png" alt="logo Placeholder"></a></div>
             <nav class="menu">
               
                 <ol>
@@ -18,14 +27,14 @@
                       <ul class="submenu">
                         <li class="subOption"><a href="">Membre du bureau</a></li>
                         <li class="subOption"><a href="">Origine du site</a></li>
-                        <li class="subOption"><a href="Reglement.html">Réglement</a></li>
-                        <li class="subOption"><a href="Inscription.html">Fiches d'inscription</a></li>
+                        <li class="subOption"><a href="html/Reglement.html">Réglement</a></li>
+                        <li class="subOption"><a href="html/Inscription.html">Fiches d'inscription</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Licenciés</a>
                       <ul class="submenu">
                             <li class="subOption"><a href="">Pourquoi étre licencié ?</a></li>
-                            <li class="subOption"><a href="Licence_et_tarif.html">Licence et tarifs</a></li>
+                            <li class="subOption"><a href="html/Licence_et_tarif.html">Licence et tarifs</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Piste</a>
@@ -34,9 +43,9 @@
                       </ul>
                     </li>
                       
-                    <li class="mainMenu"><a href="Tableau-participants.html">Classement</a>
+                    <li class="mainMenu"><a href="html/Tableau-participants.html">Classement</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="Tableau-participants.html">Liste participants</a></li>
+                        <li class="subOption"><a href="html/Tableau-participants.html">Liste participants</a></li>
                         <li class="subOption"><a href="">Résultats courses</a></li>
                       </ul>
                     </li>
@@ -49,104 +58,6 @@
 </ul>
       </div>
   </header>
-  <br />
-  <br />
-  <br />
-  <br />
-    <h2 style="text-align: center;">Formulaire d'inscription</h2>
-    <form name="RegForm" action="../index.html" onsubmit="return W3docs()" method="post" class="w3docs">
-      <div>
-        <label for="Nom">Nom:</label>
-        <input type="text" id="Nom" size="60" name="Nom" />
-      </div>
-      <br />
-      <div>
-        <label for="adresse">Prenom: </label>
-        <input type="text" id="adresse" size="60" name="Adresse" />
-      </div>
-      <br />
-      <div>
-        <label for="E-mail" l>Adresse électronique:</label>
-        <input type="text" id="E-mail" size="60" name="Email" />
-      </div>
-      <br />
-      <div>
-        <label for="Mot de passe">Mot de passe:</label>
-        <input type="text" id="Mot de passe" size="60" name="Mot de passe" />
-      </div>
-      <br />
-      <div>
-        <label for="Téléphone">Téléphone: </label>
-        <input type="text" id="Téléphone" size="60" name="Téléphone" />
-      </div>
-      <br />
-      <div>
-        <label for="Licence">N° de Licence: </label>
-        <input type="text" id="Licence" size="60" name="Licence" />
-      </div>
-      <br />
-      <div class="buttons">
-        <input type="submit" value="Envoyer" name="Envoyer" />
-        <input type="reset" value="Réinitialiser" name="Réinitialiser" />
-      </div>
-    </form>
-    <script>
-      function W3docs() {
-        var name = document.forms["RegForm"]["Nom"];
-        var email = document.forms["RegForm"]["Email"];
-        var phone = document.forms["RegForm"]["Téléphone"];
-        var Licence = document.forms["RegForm"]["Licence"];
-        var password = document.forms["RegForm"]["Mot de passe"];
-        var address = document.forms["RegForm"]["Adresse"];
-        var comment = document.forms["RegForm"]["Commentaire"];
+</body>
 
-        if (name.value == "") {
-          alert("Mettez votre nom.");
-          name.focus();
-          return false;
-        }
-        if (address.value == "") {
-          alert("Mettez votre adresse.");
-          address.focus();
-          return false;
-        }
-        if (email.value == "") {
-          alert("Mettez une adresse email valide.");
-          email.focus();
-          return false;
-        }
-        if (email.value.indexOf("@", 0) < 0) {
-          alert("Mettez une adresse email valide.");
-          email.focus();
-          return false;
-        }
-        if (email.value.indexOf(".", 0) < 0) {
-          alert("Mettez une adresse email valide.");
-          email.focus();
-          return false;
-        }
-        if (phone.value == "") {
-          alert("Mettez votre numéro de téléphone.");
-          phone.focus();
-          return false;
-        }
-        if (password.value == "") {
-          alert("Saisissez votre mot de passe");
-          password.focus();
-          return false;
-        }
-        if (Licence.value == ""){
-          alert("Écrivez un numéro de Licence. ");
-          comment.focus();
-          return false;
-        }
-        if (comment.value == "") {
-          alert("Écrivez un commentaire.");
-          comment.focus();
-          return false;
-        }
-        return true;
-      }
-    </script>
-  </body>
 </html>

@@ -1,24 +1,41 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-  <title>Le Grand Rush De Baggio</title>
-
-  
-      <link rel="stylesheet" href="../css/style.css">
-
-</head>
-
-<body>
-
+<?php
+    $host="localhost";
+    $user="root";
+    $mdp="";
+    $bdd="voiturerc";
     
+    //récupération des paramètres de configuration dans la variable PHP connect
+    $connect = mysqli_connect($host,$user,$mdp,$bdd);
+    //fin du code PHP
+?>
+<?php
+        $Nom = $_POST['Nom'];
+        $Prenom  = $_POST['Prenom'];
+        $Email = $_POST['Email'];
+        $Mot_de_passe = $_POST['Mot_de_passe'];
+        $Telephone = $_POST['Telephone'];
+        $Licence = $_POST['Licence'];
+        echo $Nom;
+        //requete pour ajouter des éléments dans la table "utilisateurs"
+        $requete = "INSERT INTO Inscription (Nom, Prenom, Adresse_electronique, mot_de_passe, telephone, numero_licence) VALUES('$Nom','$Prenom','$Email','$Mot_de_passe','$Telephone', '$Licence')";
+        mysqli_query($connect,$requete);
+        echo "Enregistre";
+        header('Location:../index.php');
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
     <div class="popUp"></div>
     <div class="dimmer"></div>
     
     <header class="header clearfix">
         <div class="clearfix display-flex align-items contentHolder" data-items="center">
-            <div class="logo"><a href="index.php"><img src="../imgs/logo.png" alt="logo Placeholder"></a></div>
+            <div class="logo"><a href="../index.php"><img src="../imgs/logo.png" alt="logo Placeholder"></a></div>
             <nav class="menu">
               
                 <ol>
@@ -56,9 +73,116 @@
   <li><a target="_blank" href="http://www.instagram.com"><svg viewBox="0 0 512 512">><path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"/><path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"/><circle cx="351.5" cy="160.5" r="21.5"/></g></svg></a></li>
 </ul>
       </div>
-      
   </header>
- <img src="../imgs/Tarif_Licence.PNG" alt="Logo et Tatif" id="Tarif">
-</body>
+  <br />
+  <br />
+  <br />
+  <br />
+    <h2 style="text-align: center;">Formulaire d'inscription</h2>
+    <form name="RegForm" action="#" onsubmit="return W3docs()" method="post" class="w3docs">
+      <div>
+        <label for="Nom">Nom:</label>
+        <input type="text" id="Nom" size="60" name="Nom" />
+      </div>
+      <br />
+      <div>
+        <label for="adresse">Prenom: </label>
+        <input type="text" id="adresse" size="60" name="Prenom" />
+      </div>
+      <br />
+      <div>
+        <label for="E-mail" l>Adresse électronique:</label>
+        <input type="text" id="E-mail" size="60" name="Email" />
+      </div>
+      <br />
+      <div>
+        <label for="Type de voiture">Type de voiture: </label>
+        <input type="text" id="Type de voiture" size="60" name="Type_de_voiture" />
+      </div>
+      <br />
+      <div>
+        <label for="Voiture_num">Numero de la voiture: </label>
+        <input type="text" id="Voiture_num" size="60" name="Type_de_voiture" />
+      </div>
+      <br />
+      <div>
+        <label for="Téléphone">Téléphone: </label>
+        <input type="tel" id="Téléphone" size="60" name="Telephone" />
+      </div>
+      <br />
+      <div>
+        <label for="Licence">N° de Licence: </label>
+        <input type="text" id="Licence" size="60" name="Licence" />
+      </div>
+      <br />
+      <div class="buttons">
+        <input type="submit" value="Envoyer" name="Envoyer" />
+        <input type="reset" value="Réinitialiser" name="Réinitialiser" />
+      </div>
+    </form>
+    <script>
+      function W3docs() {
+        var name = document.forms["RegForm"]["Nom"];
+        var email = document.forms["RegForm"]["Email"];
+        var phone = document.forms["RegForm"]["Téléphone"];
+        var licence = document.forms["RegForm"]["Licence"];
+        var type = document.forms["RegForm"]["Type_de_voiture"];
+        var numero = document.forms["RegForm"]["Voiture_num"];
+        var address = document.forms["RegForm"]["Adresse"];
+        var comment = document.forms["RegForm"]["Commentaire"];
 
+        if (name.value == "") {
+          alert("Mettez votre nom.");
+          name.focus();
+          return false;
+        }
+        if (address.value == "") {
+          alert("Mettez votre adresse.");
+          address.focus();
+          return false;
+        }
+        if (email.value == "") {
+          alert("Mettez une adresse email valide.");
+          email.focus();
+          return false;
+        }
+        if (email.value.indexOf("@", 0) < 0) {
+          alert("Mettez une adresse email valide.");
+          email.focus();
+          return false;
+        }
+        if (email.value.indexOf(".", 0) < 0) {
+          alert("Mettez une adresse email valide.");
+          email.focus();
+          return false;
+        }
+        if (phone.value == "") {
+          alert("Mettez votre numéro de téléphone.");
+          phone.focus();
+          return false;
+        }
+        if (type.value == "") {
+          alert("Saisissez votre type de voiture");
+          type.focus();
+          return false;
+        }
+        if (numero.value == "") {
+          alert("Saisissez votre numero de voiture");
+          numero.focus();
+          return false;
+        }
+        if (Licence.value == ""){
+          alert("Écrivez un numéro de Licence. ");
+          licence.focus();
+          return false;
+        }
+        if (comment.value == "") {
+          alert("Écrivez un commentaire.");
+          comment.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
 </html>

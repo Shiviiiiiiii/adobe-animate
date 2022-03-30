@@ -28,7 +28,7 @@
                         <li class="subOption"><a href="">Membre du bureau</a></li>
                         <li class="subOption"><a href="">Origine du site</a></li>
                         <li class="subOption"><a href="html/Reglement.html">Réglement</a></li>
-                        <li class="subOption"><a href="html/Inscription.html">Fiches d'inscription</a></li>
+                        <li class="subOption"><a href="html/Inscription.php">Fiches d'inscription</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Licenciés</a>

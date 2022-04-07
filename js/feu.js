@@ -4,10 +4,10 @@ let feuDepart = {
             stop: document.getElementById('stp'),
             reset: document.getElementById('rst'),
             audioOBJ: new Audio('https://lasonotheque.org/UPLOAD/ogg/0564.ogg'),
-            audioOBJ2: new Audio('https://lasonotheque.org/UPLOAD/ogg/0035.ogg'),
+            audioOBJ2: new Audio('192.168.112.124/ogg/La_Purge.ogg'),
             ms: 0,
-            sec: 0,
-            min: 0,
+            sec: 55,
+            min: 4,
             t: null,  
 
             play: () => {

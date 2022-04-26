@@ -17,7 +17,7 @@
         $Licence = $_POST['Licence'];
         echo $Nom;
         //requete pour ajouter des éléments dans la table "utilisateurs"
-        $requete = "INSERT INTO Inscription (Nom, Prenom, Adresse_electronique, Type_de_voiture, telephone, numero_licence) VALUES('$Nom','$Prenom','$Email','$Type','$Telephone', '$Licence')";
+        $requete = "INSERT INTO inscription (Nom, Prenom, Adresse_electronique, Type_de_voiture, telephone, numero_licence) VALUES('$Nom','$Prenom','$Email','$Type','$Telephone', '$Licence')";
         mysqli_query($connect,$requete);
         echo "Enregistre";
         header('Location:../index.php');

@@ -1,7 +1,7 @@
 <?php
-    $host="localhost";
-    $user="root";
-    $mdp="";
+    $host="192.168.112.124";
+    $user="Webmaster";
+    $mdp="azerty";
     $bdd="voiturerc";
     
     //récupération des paramètres de configuration dans la variable PHP connect

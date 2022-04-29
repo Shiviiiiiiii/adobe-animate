@@ -1,12 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="fr" >
 
 <head>
   <meta charset="UTF-8">
   <title>Le Grand Rush De Baggio</title>
-
-  
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -43,9 +42,9 @@
                       </ul>
                     </li>
                       
-                    <li class="mainMenu"><a href="html/Tableau-participants.html">Classement</a>
+                    <li class="mainMenu"><a href="html/Tableau-participants.php">Classement</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="html/Tableau-participants.html">Liste participants</a></li>
+                        <li class="subOption"><a href="html/Tableau-participants.php">Liste participants</a></li>
                         <li class="subOption"><a href="">Résultats courses</a></li>
                       </ul>
                     </li>

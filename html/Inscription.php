@@ -1,5 +1,5 @@
 <?php
-    $host="192.168.112.124";
+    $host="localhost";
     $user="Webmaster";
     $mdp="azerty";
     $bdd="voiturerc";
@@ -9,6 +9,7 @@
     //fin du code PHP
 ?>
 <?php
+      if(isset($_POST['Envoyer'])){
         $Nom = $_POST['Nom'];
         $Prenom  = $_POST['Prenom'];
         $Email = $_POST['Email'];
@@ -21,6 +22,7 @@
         mysqli_query($connect,$requete);
         echo "Enregistre";
         header('Location:../index.php');
+      }
 ?>
 <!DOCTYPE html>
 <html>

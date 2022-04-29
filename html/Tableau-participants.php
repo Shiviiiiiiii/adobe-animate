@@ -1,5 +1,5 @@
 <?php
-    $host="192.168.112.124";
+    $host="localhost";
     $user="Webmaster";
     $mdp="azerty";
     $bdd="voiturerc";
@@ -7,6 +7,7 @@
     //récupération des paramètres de configuration dans la variable PHP connect
     $connect = mysqli_connect($host,$user,$mdp,$bdd);
     //fin du code PHP
+
 ?>
 
 <DOCTYPE html>
@@ -14,8 +15,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
         <title>Le Grand Rush De Baggio</title>
-        <link rel="stylesheet" href="../css/style-Tab.css">
+        <link rel="stylesheet" href="../css/Style-Tab.css">
+        <meta  http-equiv="refresh" content="5">
     </head>
     <body>
         <header class="header clearfix">
@@ -44,9 +48,9 @@
                           </ul>
                         </li>
                           
-                        <li class="mainMenu"><a href="Tableau-participants.html">Classement</a>
+                        <li class="mainMenu"><a href="Tableau-participants.php">Classement</a>
                           <ul class="submenu">
-                            <li class="subOption"><a href="Tableau-participants.html">Liste participants</a></li>
+                            <li class="subOption"><a href="Tableau-participants.php">Liste participants</a></li>
                             <li class="subOption"><a href="">Résultats courses</a></li>
                           </ul>
                         </li>
@@ -68,12 +72,10 @@
                 <tr>
                  <th>Nom</th>
                  <th>Prénom</th>
-                 <th><a href="Tableau_Caractéristiques.html">Type de voiture</a></th>
+                 <th>Type de voiture</a></th>
                  <th>Numero de la voiture</th>
                  <th>Caution d'inscription</th>
                  <th>Licence validé</th>
-                 <th>Place</th>
-                 <th>Temps de classement</th>
                 </tr>
             </thead>
     
@@ -82,16 +84,19 @@
             <?php
                 $req = 'SELECT * FROM inscription';
                 $exec = mysqli_query($connect,$req);
-                $players=mysqli_fetch_all($exec);         
+                $players=mysqli_fetch_all($exec);
+
                 foreach($players as $player){?>
                     <tr>
                     <td><?= $player[1];?></td>
                     <td><?= $player[2];?></td>
+                    <td><?= $player[4];?></td>
+                    <td><?= $player[5];?></td>
                     <td></td>
-                    <td><?= $player[0];?></td>
+                    <td><?= $player[7];?></td>
                 </tr>
               <?php  } ?>
             </tbody>
 
 </table>
-
+</body>

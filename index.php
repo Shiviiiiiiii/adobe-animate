@@ -24,19 +24,19 @@
                 <ol>
                     <li class="mainMenu"><a href="">Fédération</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="">Membre du bureau</a></li>
-                        <li class="subOption"><a href="">Origine du site</a></li>
+                        <li class="subOption"><a href="html/membre_du_bureau.html">Membre du bureau</a></li>
+                        <li class="subOption"><a href="html/origine_du_site.html">Origine du site</a></li>
                         <li class="subOption"><a href="html/Reglement.html">Réglement</a></li>
                         <li class="subOption"><a href="html/Inscription.php">Fiches d'inscription</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Licenciés</a>
                       <ul class="submenu">
-                            <li class="subOption"><a href="">Pourquoi étre licencié ?</a></li>
+                            <li class="subOption"><a href="html/pourquoi_etre_licencie.html">Pourquoi étre licencié ?</a></li>
                             <li class="subOption"><a href="html/Licence_et_tarif.html">Licence et tarifs</a></li>
                       </ul>
                     </li>
-                    <li class="mainMenu"><a href="">Piste</a>
+                    <li class="mainMenu"><a href="html/les_pistes.html">Pistes</a>
                       <ul class="submenu">
                           <li class="subOption"><a href="">Piste 1/10 electrique</a></li>
                       </ul>

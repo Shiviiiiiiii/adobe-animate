@@ -580,3 +580,9 @@ form label {
 embed {
   margin: 0 25%;
 }
+
+#image {
+  margin: 0 20%;
+  width: auto;
+  align-items: center;
+}

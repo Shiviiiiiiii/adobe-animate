@@ -1,32 +1,32 @@
 <header class="header clearfix">
         <div class="clearfix display-flex align-items contentHolder" data-items="center">
-            <div class="logo"><a href="index.php"><img src="imgs/logo.png" alt="logo Placeholder"></a></div>
+            <div class="logo"><a href="index.php"><img src="/voiturerc/imgs/logo.png" alt="logo Placeholder"></a></div>
             <nav class="menu">
               
                 <ol>
                     <li class="mainMenu"><a href="">Fédération</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="html/membre_du_bureau.html">Membre du bureau</a></li>
-                        <li class="subOption"><a href="html/origine_du_site.html">Origine du site</a></li>
-                        <li class="subOption"><a href="html/Reglement.html">Réglement</a></li>
-                        <li class="subOption"><a href="html/Inscription.php">Fiches d'inscription</a></li>
+                        <li class="subOption"><a href="/voiturerc/html/membre_du_bureau.php">Membre du bureau</a></li>
+                        <li class="subOption"><a href="/voiturerc/html/origine_du_site.php">Origine du site</a></li>
+                        <li class="subOption"><a href="/voiturerc/html/Reglement.php">Réglement</a></li>
+                        <li class="subOption"><a href="/voiturerc/html/Inscription.php">Fiches d'inscription</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Licenciés</a>
                       <ul class="submenu">
-                            <li class="subOption"><a href="html/pourquoi_etre_licencie.html">Pourquoi étre licencié ?</a></li>
-                            <li class="subOption"><a href="html/Licence_et_tarif.html">Licence et tarifs</a></li>
+                            <li class="subOption"><a href="/voiturerc/html/pourquoi_etre_licencie.php">Pourquoi étre licencié ?</a></li>
+                            <li class="subOption"><a href="/voiturerc/html/Licence_et_tarif.php">Licence et tarifs</a></li>
                       </ul>
                     </li>
-                    <li class="mainMenu"><a href="html/les_pistes.html">Pistes</a>
+                    <li class="mainMenu"><a href="">Pistes</a>
                       <ul class="submenu">
-                          <li class="subOption"><a href="">Piste 1/10 electrique</a></li>
+                          <li class="subOption"><a href="/voiturerc/html/les_pistes.php">Circuits</a></li>
                       </ul>
                     </li>
                       
-                    <li class="mainMenu"><a href="html/Tableau-participants.php">Classement</a>
+                    <li class="mainMenu"><a href="/voiturerc/html/Tableau-participants.php">Classement</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="html/Tableau-participants.php">Liste participants</a></li>
+                        <li class="subOption"><a href="/voiturerc/html/Tableau-participants.php">Liste participants</a></li>
                         <li class="subOption"><a href="">Résultats courses</a></li>
                       </ul>
                     </li>

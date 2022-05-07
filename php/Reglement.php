@@ -14,6 +14,7 @@
 
   <?php include"entete.php"?>
   <embed src="../pdf/Reglement_TT1-10el-2022.pdf" width=900 height=961 type='application/pdf'/>
+  <?php include"pied.php"?>
 </body>
 
 </html>

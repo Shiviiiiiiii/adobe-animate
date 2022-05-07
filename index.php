@@ -12,7 +12,7 @@
 
 <body>
 
-<?php include"html/entete.php"?>
+<?php include"php/entete.php"?>
     
 </body>
 

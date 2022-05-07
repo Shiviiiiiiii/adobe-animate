@@ -6,27 +6,27 @@
                 <ol>
                     <li class="mainMenu"><a href="">Fédération</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="/VoitureRC/html/membre_du_bureau.php">Membre du bureau</a></li>
-                        <li class="subOption"><a href="/VoitureRC/html/origine_du_site.php">Origine du site</a></li>
-                        <li class="subOption"><a href="/VoitureRC/html/Reglement.php">Réglement</a></li>
-                        <li class="subOption"><a href="/VoitureRC/html/Inscription.php">Fiches d'inscription</a></li>
+                        <li class="subOption"><a href="/VoitureRC/php/membre_du_bureau.php">Membre du bureau</a></li>
+                        <li class="subOption"><a href="/VoitureRC/php/origine_du_site.php">Origine du site</a></li>
+                        <li class="subOption"><a href="/VoitureRC/php/Reglement.php">Réglement</a></li>
+                        <li class="subOption"><a href="/VoitureRC/php/Inscription.php">Fiches d'inscription</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Licenciés</a>
                       <ul class="submenu">
-                            <li class="subOption"><a href="/VoitureRC/html/pourquoi_etre_licencie.php">Pourquoi étre licencié ?</a></li>
-                            <li class="subOption"><a href="/VoitureRC/html/Licence_et_tarif.php">Licence et tarifs</a></li>
+                            <li class="subOption"><a href="/VoitureRC/php/pourquoi_etre_licencie.php">Pourquoi étre licencié ?</a></li>
+                            <li class="subOption"><a href="/VoitureRC/php/Licence_et_tarif.php">Licence et tarifs</a></li>
                       </ul>
                     </li>
                     <li class="mainMenu"><a href="">Pistes</a>
                       <ul class="submenu">
-                          <li class="subOption"><a href="/VoitureRC/html/les_pistes.php">Circuits</a></li>
+                          <li class="subOption"><a href="/VoitureRC/php/les_pistes.php">Circuits</a></li>
                       </ul>
                     </li>
                       
-                    <li class="mainMenu"><a href="">Classement</a>
+                    <li class="mainMenu"><a href="/VoitureRC/php/Tableau-participants.php">Classement</a>
                       <ul class="submenu">
-                        <li class="subOption"><a href="/VoitureRC/html/Tableau-participants.php">Liste participants</a></li>
+                        <li class="subOption"><a href="/VoitureRC/php/Tableau-participants.php">Liste participants</a></li>
                         <li class="subOption"><a href="">Résultats courses</a></li>
                       </ul>
                     </li>

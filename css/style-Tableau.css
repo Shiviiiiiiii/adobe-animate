@@ -582,3 +582,21 @@ header {
   .social li:before {
     content: '';
   }
+  
+/* == Footer ================================================= */
+
+#pieds {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+}
+
+#partenaire {
+  
+  text-decoration: underline;
+}
+
+#Baggio {
+  width:20%;
+}

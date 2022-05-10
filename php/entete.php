@@ -24,7 +24,7 @@
                       </ul>
                     </li>
                       
-                    <li class="mainMenu"><a href="">Classement</a>
+                    <li class="mainMenu"><a href="/VoitureRC/html/Tableau-participants.php">Classement</a>
                       <ul class="submenu">
                         <li class="subOption"><a href="/VoitureRC/html/Tableau-participants.php">Liste participants</a></li>
                         <li class="subOption"><a href="">Résultats courses</a></li>

@@ -145,5 +145,6 @@
         return true;
       }
     </script>
+    <?php include"pied.php"?>
   </body>
 </html>

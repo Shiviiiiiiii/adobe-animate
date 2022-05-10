@@ -10,7 +10,7 @@
   <body>
 
     <?php include"entete.php"?>
-    
+        
     <br></br>
     <br></br>
     <h1>Présentation de quelques circuits:</h1>
@@ -50,6 +50,9 @@
     Un virage relevé est présent avant la plus grande des lignes droites.
     Il fallait rester sur la trajectoire, matérialisée sur la piste par une trace noire, pour bénéficier du grip maximum. Comme la piste est relativement bosselée, il fallait tenir compte de ce paramètre los des réglages de son auto.
     </p>
+    
+    <?php include"pied.php"?>
+    
 </body>
 
 </html>

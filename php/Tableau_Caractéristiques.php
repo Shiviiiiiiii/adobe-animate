@@ -97,7 +97,7 @@
     	</tr>
 
     </table>
-
+	<?php include"pied.php"?>
   </body>
   
 </html>

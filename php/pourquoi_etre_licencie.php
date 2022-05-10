@@ -16,6 +16,6 @@
     <img id="image" src="../imgs/avantage_de_la_licence.PNG" alt="image_1">
     <img id="image" src="../imgs/esemple_carte_avantage_licence.PNG" alt="image_2">
     <img id="image" src="../imgs/assurance_avantage_licence.PNG" alt="image_3">
-
+  <?php include"pied.php"?>
 </body>
 </html>

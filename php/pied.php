@@ -1,9 +1,11 @@
-Partenaires
- 			
-photo de partenaires
- 
-FÉDÉRATION FRANÇAISE DE VOITURES RADIO COMMANDÉES
-Centre d'Activités Hoche n°3 - 5 rue Condorcet - 91260 JUVISY-SUR-ORGE
-Tel : 01 69 96 74 74 - Mail : ffvrc@ffvrc.fr
+<footer id="pieds">
 
-Plan du site | Contact | Réalisation : Ex-Alto © 2014
+    <h3 id="partenaire"> Partenaire </h3>
+
+        <img src="../imgs/logo_baggio.jpg" alt="Logo Bagiio" id="Baggio">
+ 
+        <p>Lycée César Baggio - 58000 Lille
+            <br>Réalisation : Groupe De projet LMHW</br>
+        </p>
+
+</footer>

@@ -36,5 +36,6 @@
         <p>
             Puis pour finir, voici le dernier mais pas le moindre Mr Wilson Nereyman.
         </p>
+        <?php include"pied.php"?>
         </body>
 </html>

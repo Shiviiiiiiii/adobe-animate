@@ -13,5 +13,6 @@
   <?php include"entete.php"?>
 
   <img src="../imgs/Tarif_Licence.PNG" alt="Logo et Tatif" id="Tarif">
+  <?php include"pied.php"?>
         </body>
 </html>

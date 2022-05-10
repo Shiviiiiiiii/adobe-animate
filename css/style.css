@@ -581,6 +581,8 @@ embed {
   margin: 0 25%;
 }
 
+/* == Piste ================================================= */
+
 #image {
   margin: 0 20%;
   width: auto;
@@ -612,4 +614,22 @@ embed {
 #espace_image_3{
   margin: 10% 0 0 0;
   font-size: x-large;
+}
+
+/* == Footer ================================================= */
+
+#pieds {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+}
+
+#partenaire {
+  
+  text-decoration: underline;
+}
+
+#Baggio {
+  width:20%;
 }

@@ -37,6 +37,7 @@
                  <th>Numero de la voiture</th>
                  <th>Caution d'inscription</th>
                  <th>Licence validé</th>
+                 <th>Meilleur temps</th>
                 </tr>
             </thead>
     
@@ -55,6 +56,8 @@
                     <td><?= $player[5];?></td>
                     <td></td>
                     <td><?= $player[7];?></td>
+                    <td><?= $player[8];?></td>
+
                 </tr>
               <?php  } ?>
             </tbody>

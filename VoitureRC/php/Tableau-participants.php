@@ -54,9 +54,9 @@
                     <td><?= $player[2];?></td>
                     <td><?= $player[4];?></td>
                     <td><?= $player[5];?></td>
-                    <td><?= $player[8];?></td>
-                    <td><?= $player[6];?></td>
                     <td><?= $player[9];?></td>
+                    <td><?= $player[7];?></td>
+                    <td><?= $player[8];?></td>
 
                 </tr>
               <?php  } ?>

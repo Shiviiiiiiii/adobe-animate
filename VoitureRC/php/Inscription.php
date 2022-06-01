@@ -9,17 +9,18 @@
     //fin du code PHP
 ?>
 <?php
-      if(isset($_POST['Envoyer'])){
-        $Nom = $_POST['Nom'];
-        $Prenom  = $_POST['Prenom'];
-        $Email = $_POST['Email'];
-        $Type = $_POST['Type_de_voiture'];
-        $num = $_POST['num_de_voiture'];
-        $Licence = $_POST['Licence'];
-        $paiement = $_POST['Paiement'];
+      if(isset($_GET['Envoyer'])){
+        $Nom = $_GET['Nom'];
+        $Prenom  = $_GET['Prenom'];
+        $Email = $_GET['Email'];
+        $Type = $_GET['Type_de_voiture'];
+        $num = $_GET['num_de_voiture'];
+        $Telephone = $_GET['Telephone'];
+        $Licence = $_GET['Licence'];
+        $paiement = $_GET['Paiement'];
         //requete pour ajouter des éléments dans la table "utilisateurs"
-        $requete = "INSERT INTO inscription(Nom, Prenom, Adresse_electronique, type_de_voiture,numero_de_la_voiture, numero_licence, caution) 
-        VALUES('$Nom', '$Prenom', '$Email', '$Type', '$num', '$Licence', '$paiement')";
+        $requete = "INSERT INTO inscription(Nom, Prenom, Adresse_electronique, type_de_voiture,numero_de_voiture, telephone, numero_licence, caution) 
+        VALUES($Nom,$Prenom,$Email,$Type,$num,$Telephone, $Licence,$paiement)";
         mysqli_query($connect,$requete);
       }
 ?>
@@ -39,7 +40,7 @@
   <br />
   <br />
     <h2 style="text-align: center;">Formulaire d'inscription</h2>
-    <form name="RegForm" onsubmit="return W3docs()" method="POST" class="w3docs">
+    <form name="RegForm" onsubmit="return W3docs()" method="GET" class="w3docs">
       <div>
         <label for="Nom">Nom:</label>
         <input type="text" id="Nom" size="60" name="Nom" />
@@ -81,7 +82,7 @@
           <option value="">----------------------Merci de choisir votre moyen de payement---------------------- </option>
           <option value="PayPal">PayPal</option>
           <option value="Espece">Espece</option>
-          <option value="Carte Bancaire">Carte Bancaire</option>
+          <option value="Carte_Bancaire">Carte Bancaire</option>
         </select>
       </div>
       <br />

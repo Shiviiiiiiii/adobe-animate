@@ -19,7 +19,7 @@
 
         <title>Le Grand Rush De Baggio</title>
         <link rel="stylesheet" href="../css/Style-Tab.css">
-        <meta  http-equiv="refresh" content="5">
+        <!--<meta  http-equiv="refresh" content="5">-->
     </head>
     <body>
         
@@ -54,7 +54,7 @@
                     <td><?= $player[2];?></td>
                     <td><?= $player[4];?></td>
                     <td><?= $player[5];?></td>
-                    <td></td>
+                    <td><?= $player[9];?></td>
                     <td><?= $player[7];?></td>
                     <td><?= $player[8];?></td>
 
@@ -63,8 +63,5 @@
             </tbody>
 
 </table>
-
-<?php include"pied.php"?>
-
 </body>
 </html>

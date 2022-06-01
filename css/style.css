@@ -1,7 +1,7 @@
 /* == Header ================================================= */
 header {
   background-color: #000;
-  border-bottom: 2px solid #808080;
+  border-bottom: 2px solid #00b7ff;
   font-family: helvetica, arial, sans-serif;
   position: fixed;
   top: 0;
@@ -87,21 +87,21 @@ header nav ol li a:visited:after {
   opacity: 1;
 }
 header nav ol li a:hover {
-  color: #808080;
+  color: #00b7ff;
 }
 header nav ol li a:hover:after {
   content: '';
   opacity: 1;
 }
 header nav ol li a.active {
-  color: #808080;
+  color: #00b7ff;
 }
 header nav ol li a.active:after {
   content: '';
   opacity: 1;
 }
 header nav ol li a.active:visited {
-  color: #808080;
+  color: #00b7ff;
 }
 header nav ol li a.active:visited:after {
   content: '';
@@ -137,7 +137,7 @@ header nav ol ul.submenu li a:after {
   display: none;
 }
 header nav ol ul.submenu li a:hover {
-  color: #808080;
+  color: #00b7ff;
   background-color: #fff;
 }
 header nav ol ul.submenu li a.button {
@@ -148,7 +148,7 @@ header nav ol ul.submenu li a.button {
 }
 header nav ol ul.submenu li a.button:hover {
   background: none;
-  color: #808080;
+  color: #00b7ff;
 }
 header nav ol ul.submenu li:before {
   content: "";
@@ -364,10 +364,10 @@ header .contentHolder .logo a img {
     display: none;
   }
   header .contentHolder nav ol li a:visited {
-    color: #808080;
+    color: #00b7ff;
   }
   header .contentHolder nav ol li a:hover {
-    color: #808080;
+    color: #00b7ff;
   }
   header .contentHolder nav ol li svg {
     cursor: pointer;
@@ -399,7 +399,7 @@ header .contentHolder .logo a img {
     font-size: ems(18px);
   }
   header .contentHolder nav ol ul.submenu li a:hover {
-    color: #808080;
+    color: #00b7ff;
   }
   header .contentHolder nav ol ul.submenu li a.button {
     background-color: #fff;
@@ -410,7 +410,7 @@ header .contentHolder .logo a img {
     text-align: left;
   }
   header .contentHolder nav ol ul.submenu li a.button:hover {
-    background-color: #808080;
+    background-color: #00b7ff;
     color: #fff;
   }
   header .contentHolder nav ol ul.submenu.sub-about {
@@ -512,7 +512,7 @@ header .logo {
   fill: #fff;
 }
 .social svg:hover path {
-  fill: #808080;
+  fill: #00b7ff;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -538,8 +538,6 @@ header .logo {
   display: flex;
   align-items: center;
   width: auto;
-
-  
 }
 div input {
   margin-right: 10px;

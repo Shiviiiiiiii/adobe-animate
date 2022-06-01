@@ -14,14 +14,14 @@
         $Prenom  = $_POST['Prenom'];
         $Email = $_POST['Email'];
         $Type = $_POST['Type_de_voiture'];
+        $num = $_POST['num_de_voiture'];
         $Telephone = $_POST['Telephone'];
         $Licence = $_POST['Licence'];
-        echo $Nom;
+        $paiement = $_POST['Paiement'];
         //requete pour ajouter des éléments dans la table "utilisateurs"
-        $requete = "INSERT INTO inscription (Nom, Prenom, Adresse_electronique, Type_de_voiture, telephone, numero_licence) VALUES('$Nom','$Prenom','$Email','$Type','$Telephone', '$Licence')";
+        $requete = "INSERT INTO inscription(Nom, Prenom, Adresse_electronique, type_de_voiture,numero_de_voiture, telephone, numero_licence, caution) 
+        VALUES($Nom,$Prenom,$Email,$Type,$num,$Telephone, $Licence,$paiement)";
         mysqli_query($connect,$requete);
-        echo "Enregistre";
-        header('Location:../index.php');
       }
 ?>
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
   <br />
   <br />
     <h2 style="text-align: center;">Formulaire d'inscription</h2>
-    <form name="RegForm" action="#" onsubmit="return W3docs()" method="post" class="w3docs">
+    <form name="RegForm" onsubmit="return W3docs()" method="post" class="w3docs">
       <div>
         <label for="Nom">Nom:</label>
         <input type="text" id="Nom" size="60" name="Nom" />
@@ -52,28 +52,38 @@
       </div>
       <br />
       <div>
-        <label for="E-mail" l>Adresse électronique:</label>
+        <label for="E-mail">Adresse électronique:</label>
         <input type="text" id="E-mail" size="60" name="Email" />
       </div>
       <br />
       <div>
         <label for="Type de voiture">Type de voiture: </label>
-        <input type="text" id="Type de voiture" size="60" name="Type_de_voiture" />
+        <select id="Type_de_voiture" name="Type_de_voiture">
+          <option value="">-------------------------------Merci de choisir type de voiture---------------------------- </option>
+          <option value="Electrique">Electrique</option>
+          <option value="Thermique">Thermique</option>
+          <option value="Hybride">Hybride</option>
+        </select>
       </div>
       <br />
       <div>
         <label for="Voiture_num">Numero de la voiture: </label>
-        <input type="text" id="Voiture_num" size="60" name="Type_de_voiture" />
-      </div>
-      <br />
-      <div>
-        <label for="Téléphone">Téléphone: </label>
-        <input type="tel" id="Téléphone" size="60" name="Telephone" />
+        <input type="text" id="Voiture_num" size="60" name="num_de_voiture" />
       </div>
       <br />
       <div>
         <label for="Licence">N° de Licence: </label>
         <input type="text" id="Licence" size="60" name="Licence" />
+      </div>
+      <br />  
+      <div>
+        <label for="Paiement">Paiement: </label>
+        <select id="Paiement" name="Paiement">
+          <option value="">----------------------Merci de choisir votre moyen de payement---------------------- </option>
+          <option value="PayPal">PayPal</option>
+          <option value="Espece">Espece</option>
+          <option value="Carte_Bancaire">Carte Bancaire</option>
+        </select>
       </div>
       <br />
       <div class="buttons">
@@ -84,22 +94,21 @@
     <script>
       function W3docs() {
         var name = document.forms["RegForm"]["Nom"];
+        var last_name = document.forms["RegForm"]["Prenom"];
         var email = document.forms["RegForm"]["Email"];
-        var phone = document.forms["RegForm"]["Téléphone"];
         var licence = document.forms["RegForm"]["Licence"];
         var type = document.forms["RegForm"]["Type_de_voiture"];
         var numero = document.forms["RegForm"]["Voiture_num"];
-        var address = document.forms["RegForm"]["Adresse"];
-        var comment = document.forms["RegForm"]["Commentaire"];
+        var paiement = document.forms["RegForm"]["Paiement"];
 
         if (name.value == "") {
           alert("Mettez votre nom.");
           name.focus();
           return false;
         }
-        if (address.value == "") {
-          alert("Mettez votre adresse.");
-          address.focus();
+        if (last_name.value == "") {
+          alert("Mettez votre prenom.");
+          name.focus();
           return false;
         }
         if (email.value == "") {
@@ -117,13 +126,8 @@
           email.focus();
           return false;
         }
-        if (phone.value == "") {
-          alert("Mettez votre numéro de téléphone.");
-          phone.focus();
-          return false;
-        }
         if (type.value == "") {
-          alert("Saisissez votre type de voiture");
+          alert("Choisisez votre type de voiture");
           type.focus();
           return false;
         }
@@ -132,19 +136,19 @@
           numero.focus();
           return false;
         }
+        
         if (Licence.value == ""){
           alert("Écrivez un numéro de Licence. ");
           licence.focus();
           return false;
         }
-        if (comment.value == "") {
-          alert("Écrivez un commentaire.");
-          comment.focus();
+        if (paiement.value == "") {
+          alert("Choisisez un moyen de paiement.");
+          paiement.focus();
           return false;
         }
         return true;
       }
     </script>
-    <?php include"pied.php"?>
   </body>
 </html>

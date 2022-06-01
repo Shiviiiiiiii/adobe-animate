@@ -19,7 +19,7 @@
 
         <title>Le Grand Rush De Baggio</title>
         <link rel="stylesheet" href="../css/Style-Tab.css">
-        <!--<meta  http-equiv="refresh" content="5">-->
+        <meta  http-equiv="refresh" content="5">
     </head>
     <body>
         

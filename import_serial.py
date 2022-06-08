@@ -5,7 +5,7 @@ import os
 file_name = "data.json" # Once created, open this file in a browser.
 
 # Adapt serial port nr. & baud rate to your system.
-serial_port = 'COM10'
+serial_port = 'COM13'
 baudrate = 9600
 
 

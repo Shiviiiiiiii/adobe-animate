@@ -1,0 +1,81 @@
+html {
+    background-color: white;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0%, 30%;
+    width: 250px;
+    height: 850px;
+    border: 10px solid;
+    margin: 5px auto;
+    margin-top: 40px;
+}
+
+.FeuRouge {
+    border-radius: 90% 90% 90% 90%;
+    margin-left: 0px;
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    background-color: red;
+    border: 10px solid;
+}
+
+.FeuRouge:not(.stopped) {
+    animation: black 2s;
+}
+
+@keyframes black {
+    100% {
+        border-radius: 90% 90% 90% 90%;
+        background: black;
+    }
+}
+
+.FeuOrange1 {
+    border-radius: 90% 90% 90% 90%;
+    margin-left: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 214, 78);
+    border: 10px solid;
+}
+
+.FeuOrange1:not(.stopped) {
+    animation: black 5s;
+}
+
+.FeuOrange2 {
+    border-radius: 90% 90% 90% 90%;
+    margin-left: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 214, 78);
+    border: 10px solid;
+}
+
+.FeuOrange2:not(.stopped) {
+    animation: black 7s;
+}
+
+.FeuVert {
+    border-radius: 90% 90% 90% 90%;
+    margin-left: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-bottom: 5px;
+    border: 10px solid;
+}
+
+.FeuVert:not(.stopped) {
+    animation: black 9s;
+}
+
+h1 {
+    color: white;
+}

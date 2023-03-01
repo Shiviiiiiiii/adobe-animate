@@ -38,6 +38,7 @@
                  <th>Caution d'inscription</th>
                  <th>Licence validé</th>
                  <th>Meilleur temps</th>
+                 <th>Nombres de tours</th>
                 </tr>
             </thead>
     
@@ -54,17 +55,15 @@
                     <td><?= $player[2];?></td>
                     <td><?= $player[4];?></td>
                     <td><?= $player[5];?></td>
-                    <td></td>
-                    <td><?= $player[7];?></td>
                     <td><?= $player[8];?></td>
+                    <td><?= $player[6];?></td>
+                    <td><?= $player[9];?></td>
+                    <td><?= $player[10];?></td>
 
                 </tr>
               <?php  } ?>
             </tbody>
 
 </table>
-
-<?php include"pied.php"?>
-
 </body>
 </html>

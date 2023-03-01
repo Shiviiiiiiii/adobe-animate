@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-02-09" view-index="0" gantt-divider-location="311" resource-divider-location="300" version="3.1.3103" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="307" order="0"/>
+        <option id="color.recent">
+            <![CDATA[#f4f4f4 #cccc00 #66cc00 #ff6666 #0099cc #ff9966 #ffcc00 #009933 #ff3333 #ff0000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="6" name="Début du projet" color="#ff0000" meeting="false" start="2022-02-02" duration="86" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="7" name="Découverte du projet" color="#8cb6ce" meeting="false" start="2022-02-02" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Répartition des tâches" color="#8cb6ce" meeting="false" start="2022-02-02" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Synchronisation entre la télécommande et la voiture" color="#8cb6ce" meeting="false" start="2022-02-02" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="59" name="Questions posées à une connaissance sur l'organisation des courses" color="#8cb6ce" meeting="false" start="2022-02-02" duration="15" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="Mise en place du serveur" color="#8cb6ce" meeting="false" start="2022-02-03" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Recherche sur comment capter les voitures" color="#8cb6ce" meeting="false" start="2022-02-03" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="12" name="Recherche sur les caractéristiques des voitures" color="#ff6666" meeting="false" start="2022-02-23" duration="13" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Création du tableau pour les participants" color="#0099cc" meeting="false" start="2022-02-23" duration="5" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="Création du site web" color="#66cc00" meeting="false" start="2022-02-23" duration="16" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="15" name="Feu de départ + chronomètre" color="#ff9966" meeting="false" start="2022-02-24" duration="15" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true" cost-manual-value="10.0" cost-calculated="true"/>
+        <task id="16" name="Vérification du matériel" color="#8cb6ce" meeting="false" start="2022-02-24" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="17" name="Intervention B1SNIR" color="#8cb6ce" meeting="false" start="2022-03-10" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="51" name="Création Base de Données" color="#0099cc" meeting="false" start="2022-03-10" duration="5" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="49" name="Première revue de projet" color="#8cb6ce" meeting="false" start="2022-03-24" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="44" name="Branchage des capteurs sur une carte Arduino" color="#ff6666" meeting="false" start="2022-03-30" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true">
+            <depend id="46" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="46" name="Calculer les données demandées et les implanter sur le PC Banc" color="#8cb6ce" meeting="false" start="2022-03-31" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="Test du systeme RFID" color="#ff6666" meeting="false" start="2022-04-06" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true">
+            <depend id="48" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="48" name="Créer un programme pour vérifier l'ID de la voiture et lister ses caractéristiques" color="#ff6666" meeting="false" start="2022-04-07" duration="1" complete="0" thirdDate="2022-02-02" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Hugo" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Lucas" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Maximilien" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Wilson" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="12" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="44" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
